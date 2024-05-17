@@ -1,3 +1,3 @@
-*git clone https://github.com/lil-brumski/GPA_Calculator_RSU.git* to download to your device (use a terminal or command line).
+git clone https://github.com/lil-brumski/GPA_Calculator_RSU.git to download to your device (use a terminal or command line).
 
 Compile the C# file, then run the .exe file.
