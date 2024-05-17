@@ -10,4 +10,4 @@ _git clone https://github.com/lil-brumski/GPA_Calculator_RSU.git_
 
 4. I use Termux on Android to work.
 
-5. Download *clang* for the .cpp file (optional since the .so file in this folder is gotten from the .cpp file), *mono* for the .CS file; 
+5. Download *clang* for the .cpp file, *mono* for the .cs file.
