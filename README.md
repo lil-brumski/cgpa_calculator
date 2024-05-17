@@ -11,3 +11,5 @@ _git clone https://github.com/lil-brumski/GPA_Calculator_RSU.git_
 4. I use Termux on Android to work. I use Termux's default location to run the files.
 
 5. Download *clang* for the .cpp files, *mono* for the .cs file.
+
+6. In this first folder, only compile the .cpp file.
