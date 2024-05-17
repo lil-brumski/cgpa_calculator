@@ -8,6 +8,6 @@ _git clone https://github.com/lil-brumski/GPA_Calculator_RSU.git_
 
 3. My development device is my phone lmao! 
 
-4. I use Termux on Android to work.
+4. I use Termux on Android to work. I use Termux's default location to run the files.
 
 5. Download *clang* for the .cpp file, *mono* for the .cs file.
