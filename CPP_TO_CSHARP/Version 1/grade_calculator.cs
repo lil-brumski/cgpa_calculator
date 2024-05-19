@@ -64,6 +64,9 @@ class Program
     static void Main(string[] args)
     {
         int MTH101 = getInput("Enter your MTH101 score: ");
+        while(MTH101 < 0 || MTH101 > 100){
+             MTH101 = getInput("Enter your MTH101 score: ");
+        }
         int PHY101 = getInput("Enter your PHY101 score: ");
         int CHM101 = getInput("Enter your CHM101 score: ");
         int GST111 = getInput("Enter your GST111 score: ");
