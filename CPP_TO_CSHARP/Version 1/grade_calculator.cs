@@ -80,7 +80,7 @@ class Program
 
         int GST111 = getInput("Enter your GST111 score: ");
         while(GST111 < 0 || GST111 > 100){
-             MTH101 = getInput("Enter your GST111 score: ");
+             GST111 = getInput("Enter your GST111 score: ");
         }
 
         Grade grade = new Grade(MTH101, PHY101, CHM101, GST111);
