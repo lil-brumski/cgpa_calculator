@@ -74,8 +74,14 @@ class Program
         }
 
         int CHM101 = getInput("Enter your CHM101 score: ");
+        while(CHM101 < 0 || CHM101 > 100){
+             CHM101 = getInput("Enter your CHM101 score: ");
+        }
 
         int GST111 = getInput("Enter your GST111 score: ");
+        while(GST111 < 0 || GST111 > 100){
+             MTH101 = getInput("Enter your GST111 score: ");
+        }
 
         Grade grade = new Grade(MTH101, PHY101, CHM101, GST111);
         grade._grade();
