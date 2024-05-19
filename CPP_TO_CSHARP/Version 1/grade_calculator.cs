@@ -67,8 +67,14 @@ class Program
         while(MTH101 < 0 || MTH101 > 100){
              MTH101 = getInput("Enter your MTH101 score: ");
         }
+
         int PHY101 = getInput("Enter your PHY101 score: ");
+        while(PHY101 < 0 || PHY101 > 100){
+             PHY101 = getInput("Enter your PHY101 score: ");
+        }
+
         int CHM101 = getInput("Enter your CHM101 score: ");
+
         int GST111 = getInput("Enter your GST111 score: ");
 
         Grade grade = new Grade(MTH101, PHY101, CHM101, GST111);
