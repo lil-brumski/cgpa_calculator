@@ -1,3 +1,0 @@
-On a terminal, you'll run the .exe file using a C# compiler. 
-
-I used two programming languages to accomplish this task.
