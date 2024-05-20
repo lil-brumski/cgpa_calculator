@@ -12,4 +12,4 @@ _git clone https://github.com/lil-brumski/GPA_Calculator_RSU.git_
 
 5. Download *clang* for the .cpp files, *mono* for the .cs file.
 
-6. In this first folder, only compile the .cpp file in the CPP folder.
+6. Only compile the .cpp file in the CPP folder. Run the .exe file in the second folder.
