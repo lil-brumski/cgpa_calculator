@@ -20,7 +20,7 @@
      }
      
 extern "C" {
-    int getInput(const char* prompt) {
-        return Input<int>(prompt);
+    double getInput(const char* prompt) {
+        return Input<double>(prompt);
     }
 }
