@@ -70,7 +70,7 @@ class Grade
         char gst111 = grade(GST111);
         char get101 = grade(GET101);
         char cpe111 = grade(CPE111);
-        Console.WriteLine($"MTH101: {mth101}\nRSU-GET103: {rsu_get103}\nPHY101: {phy101}\nPHY107: {phy107}\nCHM101: {chm101}\nCHM107: {chm107}\nGST111: {gst111}\nGET101: {get101}\nCPE111: {cpe111}");
+        Console.WriteLine($"\nMTH101: {mth101}\nRSU-GET103: {rsu_get103}\nPHY101: {phy101}\nPHY107: {phy107}\nCHM101: {chm101}\nCHM107: {chm107}\nGST111: {gst111}\nGET101: {get101}\nCPE111: {cpe111}");
     }
 
     public void _point()
@@ -89,7 +89,7 @@ class Grade
         double GPA = 0.00;
         GPA = (mth101GP + rsu_get103GP + phy101GP + phy107GP + chm101GP + chm107GP + gst111GP + get101GP + cpe111GP) / total_cu;
         string gpa = GPA.ToString("0.00");
-        Console.WriteLine($"First Semester GPA: {gpa}");
+        Console.WriteLine($"\nFirst Semester GPA: {gpa}");
     }
 }
 
