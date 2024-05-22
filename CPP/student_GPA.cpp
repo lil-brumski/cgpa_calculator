@@ -2,6 +2,8 @@
 #include <memory>
 #include "BRUMSKI_GRADE_CALCULATOR.hpp"
 #include "student_GPA-class.hpp"
+#include "student_CGPA-header.hpp"
+
 
 int main(){
 std::cout<<"FIRST SEMESTER:\n";
@@ -133,9 +135,10 @@ std::cout<<"FIRST SEMESTER:\n";
     std::unique_ptr<Second> ptr1 = std::make_unique<Second>(RSU_GET104, RSU_GET112, CHM102, MTH102, PHY102, CHM108, GET102, PHY108, GST112);
    ptr1->_second();
 
-    
-    
-   Cgpa cgpa;
-   cgpa.displayCGPA();
+    std::unique_ptr<CGPA> ptr2 = std::make_unique<CGPA>(RSU_GET103, CPE111, CHM101, MTH101, PHY101, CHM107, GET101, PHY107, GST111, RSU_GET104, RSU_GET112, CHM102, MTH102, PHY102, CHM108, GET102, PHY108, GST112);
+    ptr2->calc_1();
+    ptr2->calc_2();
+    ptr2->calc_3();
+
     
  }
