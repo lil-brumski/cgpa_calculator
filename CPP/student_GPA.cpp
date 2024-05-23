@@ -9,6 +9,7 @@ int main(){
 std::cout<<"FIRST SEMESTER:\n";
     //Variables for storing the scores.
     double RSU_GET103 = BRUMSKI::Input<double>("Enter your score for Elementary Mathematics III: ");
+    //If the score is less than 0 or greater than 100, an infinite loop will start until the score is within the ideal range of values.
     while(RSU_GET103 < 0 || RSU_GET103 > 100){
         std::cout<<"Score can't be lower than 0 or higher than 100. Try again."<<std::endl;
         RSU_GET103 = BRUMSKI::Input<double>("Enter your score for Elementary Mathematics III: ");
@@ -69,9 +70,11 @@ std::cout<<"FIRST SEMESTER:\n";
         GST111= BRUMSKI::Input<double>("Enter your score for Communication in English: ");
    }
  
- 
-   std::unique_ptr<First> ptr = std::make_unique<First>(RSU_GET103, CPE111, CHM101, MTH101, PHY101, CHM107, GET101, PHY107, GST111);
-   ptr->_first();
+    //Instantiation of smart pointer "ptr" for dereferencing.
+   {//Beginning of pointer scope.
+       std::unique_ptr<First> ptr = std::make_unique<First>(RSU_GET103, CPE111, CHM101, MTH101, PHY101, CHM107, GET101, PHY107, GST111);
+      ptr->_first();
+  }//End.
    
    
    
@@ -132,13 +135,21 @@ std::cout<<"FIRST SEMESTER:\n";
     }
        
     
-    std::unique_ptr<Second> ptr1 = std::make_unique<Second>(RSU_GET104, RSU_GET112, CHM102, MTH102, PHY102, CHM108, GET102, PHY108, GST112);
-   ptr1->_second();
+    {//Beginning of pointer scope.
+        std::unique_ptr<Second> ptr1 = std::make_unique<Second>(RSU_GET104, RSU_GET112, CHM102, MTH102, PHY102, CHM108, GET102, PHY108, GST112);
+        ptr1->_second();
+    }//End.
 
-    std::unique_ptr<CGPA> ptr2 = std::make_unique<CGPA>(RSU_GET103, CPE111, CHM101, MTH101, PHY101, CHM107, GET101, PHY107, GST111, RSU_GET104, RSU_GET112, CHM102, MTH102, PHY102, CHM108, GET102, PHY108, GST112);
-    ptr2->calc_1();
-    ptr2->calc_2();
-    ptr2->calc_3();
 
     
+    {//Beginning of pointer scope.
+        std::unique_ptr<CGPA> ptr2 = std::make_unique<CGPA>(RSU_GET103, CPE111, CHM101, MTH101, PHY101, CHM107, GET101, PHY107, GST111, RSU_GET104, RSU_GET112, CHM102, MTH102, PHY102, CHM108, GET102, PHY108, GST112);
+        ptr2->calc_1();
+        ptr2->calc_2();
+        ptr2->calc_3();
+    }//End.
+
+    
+    /*Made by David Tamaratare Oghenebrume, a Computer Engineering student of Rivers State University, Nigeria.
+    */
  }
