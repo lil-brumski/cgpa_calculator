@@ -1,0 +1,1 @@
+Total lines for the whole project (including empty lines): 
