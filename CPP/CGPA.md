@@ -1,3 +1,3 @@
-*Total lines for the whole project (including empty lines):* # 789 lines.
+*Total lines for the whole project (including empty lines):* __789 lines.__
 
-*Number of files used:* # 11 files.
+*Number of files used:* __11 files.__
