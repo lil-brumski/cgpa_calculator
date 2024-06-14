@@ -13,7 +13,7 @@
 namespace brumski {
 
      template <class T>
-        T Input(const std::string& prompt) {
+        T input(const std::string& prompt) {
           T value;
           std::string input;
          while (true) {

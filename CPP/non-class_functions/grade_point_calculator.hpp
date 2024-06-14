@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-namespace BRUMSKI{
+namespace brumski{
     
-    namespace GRADE{
+    namespace grade{
         
         int point(char grade, int course_unit){
             
