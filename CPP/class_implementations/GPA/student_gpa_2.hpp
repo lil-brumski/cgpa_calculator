@@ -4,11 +4,8 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-#include "../../class_interfaces/student_gpa_second.hpp
+#include "../../class_interfaces/student_gpa_second.hpp"
 
-
-      Second::Second(double r4, double r2, double c2, double m2, double p2, double c8, double g2, double p8, double gs) : RSU_GET104(r4),  RSU_GET112(r2),  CHM102(c2),  MTH102(m2),  PHY102(p2),  CHM108(c8),  GET102(g2),  PHY108(p8),  GST112(gs), total_credit_unit_sec(18), cumulative_sec(0.0) {}
-          
             
       void Second::_second(){
           
@@ -23,32 +20,32 @@
           GST112 = std::round(GST112);
     
     
-          char rsu_get104 = BRUMSKI::GRADE::CALCULATOR(RSU_GET104);
-          double rsuGET104GP = BRUMSKI::GRADE::POINT(rsu_get104, 2);
+          char rsu_get104 = brumski::grade::calculator(RSU_GET104);
+          double rsuGET104GP = brumski::grade::point(rsu_get104, 2);
 
-          char rsu_get112 = BRUMSKI::GRADE::CALCULATOR(RSU_GET112);
-          double rsuGET112GP = BRUMSKI::GRADE::POINT(rsu_get112, 3);
+          char rsu_get112 = brumski::grade::calculator(RSU_GET112);
+          double rsuGET112GP = brumski::grade::point(rsu_get112, 3);
 
-          char chm102 = BRUMSKI::GRADE::CALCULATOR(CHM102);
-          double chm102GP = BRUMSKI::GRADE::POINT(chm102, 2);
+          char chm102 = brumski::grade::calculator(CHM102);
+          double chm102GP = brumski::grade::point(chm102, 2);
 
-          char mth102 = BRUMSKI::GRADE::CALCULATOR(MTH102);
-          double mth102GP = BRUMSKI::GRADE::POINT(mth102, 2);
+          char mth102 = brumski::grade::calculator(MTH102);
+          double mth102GP = brumski::grade::point(mth102, 2);
 
-          char phy102 = BRUMSKI::GRADE::CALCULATOR(PHY102);
-          double phy102GP = BRUMSKI::GRADE::POINT(phy102, 2);
+          char phy102 = brumski::grade::calculator(PHY102);
+          double phy102GP = brumski::grade::point(phy102, 2);
 
-          char chm108 = BRUMSKI::GRADE::CALCULATOR(CHM108);
-          double chm108GP = BRUMSKI::GRADE::POINT(chm108, 1);
+          char chm108 = brumski::grade::calculator(CHM108);
+          double chm108GP = brumski::grade::point(chm108, 1);
 
-          char get102 = BRUMSKI::GRADE::CALCULATOR(GET102);
-          double get102GP = BRUMSKI::GRADE::POINT(get102, 3);
+          char get102 = brumski::grade::calculator(GET102);
+          double get102GP = brumski::grade::point(get102, 3);
 
-          char phy108 = BRUMSKI::GRADE::CALCULATOR(PHY108);
-          double phy108GP = BRUMSKI::GRADE::POINT(phy108, 1);
+          char phy108 = brumski::grade::calculator(PHY108);
+          double phy108GP = brumski::grade::point(phy108, 1);
 
-          char gst112 = BRUMSKI::GRADE::CALCULATOR(GST112);
-          double gst112GP = BRUMSKI::GRADE::POINT(gst112, 2);
+          char gst112 = brumski::grade::calculator(GST112);
+          double gst112GP = brumski::grade::point(gst112, 2);
     
     
            int carry_over_sec = 0;
@@ -84,8 +81,8 @@
              
              //double total_credit_unit_sec = 18;
              double GPA_sec = 0.00;
-             cumulative_sec = (rsuGET104GP + rsuGET112GP + chm102GP + mth102GP + phy102GP + chm108GP + get102GP + phy108GP + gst112GP);
-             GPA_sec =  cumulative_sec / total_credit_unit_sec;
+             Second::cumulative_sec = (rsuGET104GP + rsuGET112GP + chm102GP + mth102GP + phy102GP + chm108GP + get102GP + phy108GP + gst112GP);
+             GPA_sec =  Second::cumulative_sec / total_credit_unit_sec;
              
              std::cout<<std::endl;
              
@@ -105,8 +102,5 @@
             std::cout<<std::endl;
            
           }
-          
-          Second::~Second() = default;
-    };
     
 #endif
