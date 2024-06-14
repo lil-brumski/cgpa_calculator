@@ -5,7 +5,7 @@
 #include <cmath>
 #include <iomanip>
 #include "../non-class_functions/grade_calculator.hpp"
-#include "../non-class_functions/grade_point.hpp"
+#include "../non-class_functions/grade_point_calculator.hpp"
 
 class First{
     protected:
