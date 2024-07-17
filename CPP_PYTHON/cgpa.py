@@ -5,7 +5,7 @@ print("FIRST SEMESTER:\n")
 
 #RSU_GET103
 RSU_GET103: float = brumski_cgpa.getInput("Enter your RSU_GET103 score: ")
-while RSU_GET103 < 0 or RSU_GET103 > 10:
+while RSU_GET103 < 0 or RSU_GET103 > 100:
     print("Score cannot be less than 0 or more that 100!")
     RSU_GET103: float = brumski_cgpa.getInput("Enter your RSU_GET103 score: ")
 rs: str = brumski_cgpa.grade_calc(RSU_GET103)
