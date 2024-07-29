@@ -23,7 +23,7 @@ namespace brumski{
     
         score = std::round(score);    
     
-        char grade = brumski::grade:: CALCULATOR(score);    
+        char grade = brumski::grade::CALCULATOR(score);    
     
         return grade;
     
