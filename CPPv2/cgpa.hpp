@@ -1,7 +1,7 @@
 #pragma once
 
-#include <brumski_cpp/math/grade_calculator.hpp>
-#include <brumski_cpp/math/grade_point.hpp>
+#include "grade_calculator.hpp"
+#include "grade_point.hpp"
 #include <cmath>
 #include <iomanip>
 #include <stdexcept>
