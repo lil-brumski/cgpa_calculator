@@ -1,4 +1,4 @@
-# CGPA_Calculator_RSU
+# cgpa_calculator
 
 1. A GGPA calculator for YEAR 1 Computer Engineering; 2023/2024 academic session.
 
